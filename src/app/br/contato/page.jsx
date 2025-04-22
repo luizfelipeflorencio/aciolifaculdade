@@ -80,9 +80,9 @@ export default function ContatoPage() {
                     <MapPin className="mr-4 h-6 w-6 text-sky-600 flex-shrink-0" />
                     <div>
                       <h3 className="font-bold">Endereço</h3>
-                      <p className="text-gray-500">Rua Exemplo, 123</p>
-                      <p className="text-gray-500">Bairro, Cidade - Estado</p>
-                      <p className="text-gray-500">CEP: 00000-000</p>
+                      <p className="text-gray-500">Rua tuparetama 210 loja B</p>
+                      {/* <p className="text-gray-500">Bairro, Cidade - Estado</p> */}
+                      {/* <p className="text-gray-500">CEP: 00000-000</p> */}
                     </div>
                   </div>
                 </div>

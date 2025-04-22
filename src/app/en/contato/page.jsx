@@ -80,9 +80,9 @@ export default function ContactPage() {
                     <MapPin className="mr-4 h-6 w-6 text-sky-600 flex-shrink-0" />
                     <div>
                       <h3 className="font-bold">Address</h3>
-                      <p className="text-gray-500">Rua Exemplo, 123</p>
-                      <p className="text-gray-500">Bairro, City - State</p>
-                      <p className="text-gray-500">ZIP: 00000-000</p>
+                      <p className="text-gray-500">Rua tuparetama 210 loja B</p>
+                      {/* <p className="text-gray-500">Bairro, City - State</p> */}
+                      {/* <p className="text-gray-500">ZIP: 00000-000</p> */}
                     </div>
                   </div>
                 </div>

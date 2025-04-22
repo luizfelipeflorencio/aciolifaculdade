@@ -124,7 +124,7 @@ export function SiteFooter() {
               </li>
               <li className="flex justify-center md:justify-start items-start">
                 <MapPin className="mr-2 h-5 w-5 text-sky-400 flex-shrink-0" />
-                <span className="text-gray-400">Rua Exemplo, 123 - Cidade, Estado</span>
+                <span className="text-gray-400">Rua tuparetama 210 loja B</span>
               </li>
             </ul>
           </div>
