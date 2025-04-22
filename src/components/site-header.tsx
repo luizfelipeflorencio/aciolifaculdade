@@ -54,25 +54,16 @@ export function SiteHeader() {
       <div className="container relative flex items-center justify-between h-full px-4 md:px-6">
         {/* Logo */}
         <div className="flex items-center z-10">
-          <Link href={`/${isEnglish ? "en" : "br"}/inicio`} className="flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-6 w-6 text-sky-600"
-            >
-              <rect width="20" height="14" x="2" y="5" rx="2" />
-              <line x1="2" x2="22" y1="10" y2="10" />
-            </svg>
-            <span className="ml-2 text-xl font-bold text-sky-700">Acioli Climatização</span>
+          <Link href={`/${isEnglish ? "en" : "br"}/inicio`} className="flex items-center space-x-2">
+            <img
+              src="/logo.jpg"
+              alt="logo Acioli Climatização"
+              className="w-10 h-10 object-contain rounded-xl"
+            />
+            <span className="text-xl font-bold text-sky-700">Acioli Climatização</span>
           </Link>
         </div>
+
 
         {/* Seletor de Idiomas */}
         <div className="absolute right-20 md:right-24 z-10 hidden sm:block">
