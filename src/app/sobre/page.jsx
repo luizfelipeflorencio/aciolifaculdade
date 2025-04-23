@@ -3,14 +3,14 @@ import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
 
-export default function AboutPage() {
-  const brands = [
-    { name: "GREE", logo: "/gree.png" },
-    { name: "Midea", logo: "/midea.png" },
-    { name: "Hitachi", logo: "/hitachi.png" },
-    { name: "TCL", logo: "/tcl.png" },
-    { name: "Samsung", logo: "/samsung.png" },
-    { name: "LG", logo: "/lg.png" },
+export default function SobrePage() {
+  const marcas = [
+    { nome: "GREE", logo: "/gree.png" },
+    { nome: "Midea", logo: "/midea.png" },
+    { nome: "Hitachi", logo: "/hitachi.png" },
+    { nome: "TCL", logo: "/tcl.png" },
+    { nome: "Samsung", logo: "/samsung.png" },
+    { nome: "LG", logo: "/lg.png" },
   ]
 
   return (
@@ -18,9 +18,9 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="w-full py-12 md:py-24 bg-gradient-to-b from-sky-50 to-white">
         <div className="px-4 md:px-6 text-center">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-sky-700">About Us</h1>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-sky-700">Sobre Nós</h1>
           <p className="mt-4 max-w-[700px] mx-auto text-gray-500 md:text-xl">
-            Learn about our history and our commitment to quality
+            Conheça nossa história e nosso compromisso com a qualidade
           </p>
         </div>
       </section>
@@ -32,23 +32,27 @@ export default function AboutPage() {
             <div className="flex justify-center">
               <Image
                 src="/logo.jpg"
-                alt="Our team"
+                alt="Nossa equipe"
                 width={600}
                 height={600}
                 className="rounded-lg object-cover"
               />
             </div>
             <div className="flex flex-col justify-center space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter text-sky-700">Our History</h2>
+              <h2 className="text-3xl font-bold tracking-tighter text-sky-700">Nossa História</h2>
               <p className="text-gray-500 md:text-lg">
-                With over 10 years of experience in the market, we specialize in air conditioning installation and maintenance for homes and businesses. Our team is made up of highly qualified and certified professionals committed to providing the best service to our customers.
+                Com mais de 10 anos de experiência no mercado, somos especializados em instalação e manutenção de ar
+                condicionado para residências e empresas. Nossa equipe é formada por profissionais altamente
+                qualificados e certificados, comprometidos em oferecer o melhor serviço aos nossos clientes.
               </p>
               <p className="text-gray-500 md:text-lg">
-                We work with the leading brands in the market and are always up to date with the latest technologies and techniques to ensure the efficiency and durability of the equipment.
+                Trabalhamos com as principais marcas do mercado e estamos sempre atualizados com as últimas tecnologias
+                e técnicas para garantir a eficiência e durabilidade dos equipamentos.
               </p>
-              <h3 className="text-xl font-bold text-sky-700 mt-4">Our Mission</h3>
+              <h3 className="text-xl font-bold text-sky-700 mt-4">Nossa Missão</h3>
               <p className="text-gray-500 md:text-lg">
-                To provide thermal comfort with quality, efficiency, and responsibility, exceeding our customers' expectations.
+                Proporcionar conforto térmico com qualidade, eficiência e responsabilidade, superando as expectativas
+                dos nossos clientes.
               </p>
             </div>
           </div>
@@ -59,21 +63,21 @@ export default function AboutPage() {
       <section className="w-full py-12 md:py-24 bg-sky-50">
         <div className="px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter text-sky-700">Our Credentials</h2>
+            <h2 className="text-3xl font-bold tracking-tighter text-sky-700">Nossas Credenciais</h2>
             <p className="mt-4 max-w-[700px] mx-auto text-gray-500 md:text-lg">
-              We are authorized and certified technicians for the leading brands in the market
+              Somos técnicos autorizados e credenciados pelas principais marcas do mercado
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {brands.map((brand) => (
+            {marcas.map((marca) => (
               <div
-                key={brand.name}
+                key={marca.nome}
                 className="flex flex-col items-center justify-between bg-white p-6 rounded-lg shadow-sm min-h-[220px] text-center"
               >
                 <div className="flex items-center justify-center h-[100px]">
                   <Image
-                    src={brand.logo || "/logo.jpg"}
-                    alt={`Logo ${brand.name}`}
+                    src={marca.logo || "/logo.jpg"}
+                    alt={`Logo ${marca.nome}`}
                     width={100}
                     height={100}
                     className="object-contain"
@@ -81,8 +85,8 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="mt-4">
-                  <h3 className="text-lg font-bold text-sky-700">{brand.name}</h3>
-                  <p className="text-sm text-gray-500">Authorized</p>
+                  <h3 className="text-lg font-bold text-sky-700">{marca.nome}</h3>
+                  <p className="text-sm text-gray-500">Autorizado</p>
                 </div>
               </div>
             ))}
@@ -95,9 +99,9 @@ export default function AboutPage() {
       <section className="w-full py-12 md:py-24 bg-white">
         <div className="px-4 md:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter text-sky-700">Why Choose Us?</h2>
+            <h2 className="text-3xl font-bold tracking-tighter text-sky-700">Por que nos escolher?</h2>
             <p className="mt-4 max-w-[700px] mx-auto text-gray-500 md:text-lg">
-              We offer quality services with experienced and certified professionals
+              Oferecemos serviços de qualidade com profissionais experientes e certificados
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -119,9 +123,9 @@ export default function AboutPage() {
                   <path d="m9 12 2 2 4-4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-sky-700 mb-2">Service Guarantee</h3>
+              <h3 className="text-xl font-bold text-sky-700 mb-2">Garantia de Serviço</h3>
               <p className="text-gray-500">
-                All our services come with a guarantee, providing peace of mind and security to our customers.
+                Todos os nossos serviços possuem garantia, proporcionando tranquilidade e segurança aos nossos clientes.
               </p>
             </div>
             <div className="flex flex-col items-center text-center p-6 border rounded-lg shadow-sm">
@@ -143,9 +147,9 @@ export default function AboutPage() {
                   <path d="m7 21 5-5 5 5" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-sky-700 mb-2">Certified Professionals</h3>
+              <h3 className="text-xl font-bold text-sky-700 mb-2">Profissionais Certificados</h3>
               <p className="text-gray-500">
-                Our team is made up of certified professionals with extensive experience in the market.
+                Nossa equipe é formada por profissionais certificados e com ampla experiência no mercado.
               </p>
             </div>
             <div className="flex flex-col items-center text-center p-6 border rounded-lg shadow-sm">
@@ -166,9 +170,9 @@ export default function AboutPage() {
                   <circle cx="12" cy="12" r="10" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-sky-700 mb-2">Original Parts</h3>
+              <h3 className="text-xl font-bold text-sky-700 mb-2">Peças Originais</h3>
               <p className="text-gray-500">
-                We only use original factory parts, ensuring the quality and durability of the equipment.
+                Utilizamos apenas peças originais de fábrica, garantindo a qualidade e durabilidade dos equipamentos.
               </p>
             </div>
             <div className="flex flex-col items-center text-center p-6 border rounded-lg shadow-sm">
@@ -188,9 +192,9 @@ export default function AboutPage() {
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-sky-700 mb-2">Quick Service</h3>
+              <h3 className="text-xl font-bold text-sky-700 mb-2">Atendimento Rápido</h3>
               <p className="text-gray-500">
-                We offer fast and efficient service, respecting our customers' time.
+                Oferecemos atendimento rápido e eficiente, respeitando o tempo dos nossos clientes.
               </p>
             </div>
             <div className="flex flex-col items-center text-center p-6 border rounded-lg shadow-sm">
@@ -210,9 +214,9 @@ export default function AboutPage() {
                   <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-sky-700 mb-2">Customer Commitment</h3>
+              <h3 className="text-xl font-bold text-sky-700 mb-2">Compromisso com o Cliente</h3>
               <p className="text-gray-500">
-                Our commitment is to customer satisfaction, providing personalized and high-quality solutions.
+                Nosso compromisso é com a satisfação do cliente, oferecendo soluções personalizadas e de qualidade.
               </p>
             </div>
             <div className="flex flex-col items-center text-center p-6 border rounded-lg shadow-sm">
@@ -229,14 +233,33 @@ export default function AboutPage() {
                   strokeLinejoin="round"
                   className="text-sky-600 h-6 w-6"
                 >
-                  <path d="M12 2v20" />
-                  <path d="M5 15l7 7 7-7" />
+                  <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                  <circle cx="12" cy="12" r="3" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-sky-700 mb-2">Affordable Prices</h3>
-              <p className="text-gray-500">
-                We offer fair and transparent prices for all our services.
-              </p>
+              <h3 className="text-xl font-bold text-sky-700 mb-2">Suporte Técnico</h3>
+              <p className="text-gray-500">Oferecemos suporte técnico contínuo, mesmo após a conclusão do serviço.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="w-full py-12 md:py-24 bg-sky-700 text-white">
+        <div className="px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Clique no botão abaixo e solicite seu orçamento
+              </h2>
+              <p className="max-w-[900px] md:text-xl">Entre em contato hoje mesmo para um orçamento gratuito</p>
+            </div>
+            <div className="flex flex-col gap-2 min-[400px]:flex-row">
+              <Link href="/contato">
+                <Button className="cursor-pointer" size="lg" variant="secondary">
+                  Solicitar Orçamento
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

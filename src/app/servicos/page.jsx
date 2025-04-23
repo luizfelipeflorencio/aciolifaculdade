@@ -131,7 +131,7 @@ export default function ServicosPage() {
                     ))}
                   </ul>
                   <div className="pt-4">
-                    <Link href="/br/contato">
+                    <Link href="/contato">
                       <Button className="bg-sky-600 hover:bg-sky-700 cursor-pointer">
                         Solicitar Orçamento
                       </Button>
@@ -158,7 +158,7 @@ export default function ServicosPage() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center">
-              <Link href="/br/contato">
+              <Link href="contato">
                 <Button className="cursor-pointer" size="lg" variant="secondary">
                   Solicitar Orçamento
                 </Button>
