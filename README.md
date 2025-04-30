@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌬️ Acioli Climatização - Projeto Interdisciplinar
 
-## Getting Started
+Este projeto foi desenvolvido como parte de um trabalho interdisciplinar na faculdade, com o objetivo de resolver um problema real enfrentado pela empresa **Acioli Climatização**: a ausência de um site para apresentar seus serviços de forma clara e profissional.
 
-First, run the development server:
+## 📌 Objetivo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Criar um site institucional moderno, responsivo e funcional, a partir de um protótipo elaborado no Figma, para melhorar a presença digital da empresa e facilitar o contato com clientes.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **React.js**
+- **Next.js**
+- **TailwindCSS**
+- **ShadCN UI** (biblioteca de componentes)
+- **Vercel** (hospedagem)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Protótipo no Figma
 
-## Learn More
+Você pode visualizar o protótipo criado para este projeto aqui:  
+🔗 [Figma - Acioli Climatização](https://www.figma.com/design/WU1tZjqsb55kROhT5qhlZO/Acioli-Climatiza%C3%A7%C3%A3o?m=auto&t=trj8AIz5NNV4c3e8-6)
 
-To learn more about Next.js, take a look at the following resources:
+## 🌐 Site Publicado
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O site está hospedado e pode ser acessado em:  
+🔗 [acioli.vercel.app](https://acioli.vercel.app)
